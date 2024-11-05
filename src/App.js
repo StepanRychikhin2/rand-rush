@@ -21,7 +21,6 @@ const App = () => {
 			}
 		}
 	}
-
 	return (
 		<div>
 			<button onClick={() => getRandomWithChance(dataCard)}>rand</button>
@@ -31,6 +30,7 @@ const App = () => {
 						<li key={nanoid()}>
 							<p>chanse{imt.chans}</p>
 							<p>txt{imt.txt}</p>
+							<img src={imt.photo}></img>
 						</li>
 					)
 				})}
