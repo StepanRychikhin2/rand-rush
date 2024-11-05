@@ -28,9 +28,9 @@ const App = () => {
 				{listItem.map((imt) => {
 					return (
 						<li key={nanoid()}>
-							<p>chanse{imt.chans}</p>
+							<p>chanse {imt.chans}%</p>
 							<p>txt{imt.txt}</p>
-							<img src={imt.photo}></img>
+							<img width="200px" src={imt.photo}></img>
 						</li>
 					)
 				})}
