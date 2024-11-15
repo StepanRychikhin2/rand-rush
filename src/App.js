@@ -3,6 +3,7 @@ import './App.css'
 import { useState } from 'react'
 import { nanoid } from 'nanoid'
 import dataCard from './dataCard.json'
+import sty from './AppStyle.module.css'
 
 const App = () => {
 	const [listItem, setListItem] = useState([])
@@ -17,13 +18,27 @@ const App = () => {
 		for (let i = 0; i < chances.cards.length; i++) {
 			cumulativeChance += chances.cards[i].chans
 			if (random < cumulativeChance) {
+				document.getElementById('imgRund').src = chances.cards[i].photo
+				document.getElementById('TitleRund').textContent =
+					chances.cards[i].namePrs
+				document.getElementById(
+					'AnimeNameRund'
+				).textContent = `Anime name: ${chances.cards[i].AnimeName}`
+				document.getElementById(
+					'PointRund'
+				).textContent = `points: ${chances.cards[i].point}`
+				document.getElementById(
+					'chansesRund'
+				).textContent = `chanse:${chances.cards[i].chans}%`
 				return setListItem([...listItem, chances.cards[i]])
 			}
 		}
 	}
 	return (
-		<div>
-			<button onClick={() => getRandomWithChance(dataCard)}>rand</button>
+		<div className={sty.glawBox}>
+			<div>
+				<button onClick={() => getRandomWithChance(dataCard)}>rand</button>
+			</div>
 			<ul>
 				{listItem.map((imt) => {
 					return (
@@ -35,6 +50,13 @@ const App = () => {
 					)
 				})}
 			</ul>
+			<div>
+				<img className={sty.imgRund} width="200px" id="imgRund" src="aw"></img>
+				<h2 id="TitleRund"></h2>
+				<p id="AnimeNameRund"></p>
+				<p id="PointRund"></p>
+				<p id="chansesRund"></p>
+			</div>
 		</div>
 	)
 }

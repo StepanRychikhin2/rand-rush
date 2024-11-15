@@ -3,17 +3,31 @@
         
           {
             "id": 1,
-            "namePrs": "GOJO",
+            "namePrs": "Satoru Gojo",
             "photo": "https://github.com/StepanRychikhin2/rand-rush/blob/c74e13cc5a5d6c9cbfeafd94ba93bb37e363ab3d/src/img/jogo.jpg?raw=true",
             "chans": 50,
-            "txt": "5"
+            "txt": "5",
+            "point": 100,
+            "AnimeName": "Jujutsu Kaisen"
           },
           {
             "id": 2,
-            "namePrs": "GOJO",
-            "photo": "https://github.com/StepanRychikhin2/rand-rush/blob/c74e13cc5a5d6c9cbfeafd94ba93bb37e363ab3d/src/img/jogo.jpg?raw=true",
-            "chans": 50,
-            "txt": "5"
+            "namePrs": "Suguru Geto",
+            "photo": "https://github.com/StepanRychikhin2/rand-rush/blob/main/src/img/geto.jpg?raw=true",
+            "chans": 30,
+            "txt": "5wwwww",
+            "point": 1231,
+            "AnimeName": "Jujutsu Kaisen"
+          }
+          ,
+          {
+            "id": 3,
+            "namePrs": "SUKUNA",
+            "photo": "https://github.com/StepanRychikhin2/rand-rush/blob/main/src/img/sukuna.jpg?raw=true",
+            "chans": 10,
+            "txt": "5awdaw",
+            "point": 123,
+            "AnimeName": "Jujutsu Kaisen"
           }
     ]
 }
