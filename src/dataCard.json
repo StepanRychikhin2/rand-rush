@@ -14,7 +14,7 @@
             "id": 2,
             "namePrs": "Suguru Geto",
             "photo": "https://github.com/StepanRychikhin2/rand-rush/blob/main/src/img/geto.jpg?raw=true",
-            "chans": 30,
+            "chans": 15,
             "txt": "5wwwww",
             "point": 1231,
             "AnimeName": "Jujutsu Kaisen"
@@ -27,6 +27,15 @@
             "chans": 10,
             "txt": "5awdaw",
             "point": 123,
+            "AnimeName": "Jujutsu Kaisen"
+          },
+          {
+            "id": 3,
+            "namePrs": "itadori",
+            "photo": "https://github.com/StepanRychikhin2/rand-rush/blob/main/src/img/sukuna.jpg?raw=true",
+            "chans": 35,
+            "txt": "awdawd",
+            "point": 45656,
             "AnimeName": "Jujutsu Kaisen"
           }
     ]

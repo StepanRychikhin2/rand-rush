@@ -4,8 +4,13 @@ import { useState } from 'react'
 import { nanoid } from 'nanoid'
 import dataCard from './dataCard.json'
 import sty from './AppStyle.module.css'
-
+import awd from "./img/geto.jpg"
 const App = () => {
+	function chansIn(divisor) {
+		const total = 100
+		const result = Math.floor(total / divisor)
+		return result
+	}
 	const [listItem, setListItem] = useState([])
 	function getRandomWithChance(chances) {
 		const totalChance = chances.cards.reduce(
@@ -29,7 +34,7 @@ const App = () => {
 				).textContent = `points: ${chances.cards[i].point}`
 				document.getElementById(
 					'chansesRund'
-				).textContent = `chanse:${chances.cards[i].chans}%`
+				).textContent = `1/${chansIn(chances.cards[i].chans)}`
 				return setListItem([...listItem, chances.cards[i]])
 			}
 		}
