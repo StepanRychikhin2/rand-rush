@@ -2,5 +2,12 @@
 border-radius: 20px;
 }
 .glawBox {
+    
+}
+
+.boxCartRand{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

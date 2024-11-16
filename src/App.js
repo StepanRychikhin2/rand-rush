@@ -4,7 +4,8 @@ import { useState } from 'react'
 import { nanoid } from 'nanoid'
 import dataCard from './dataCard.json'
 import sty from './AppStyle.module.css'
-import awd from "./img/geto.jpg"
+import awdad from './global.module.css'
+import Header from './components/header/header'
 const App = () => {
 	function chansIn(divisor) {
 		const total = 100
@@ -32,36 +33,46 @@ const App = () => {
 				document.getElementById(
 					'PointRund'
 				).textContent = `points: ${chances.cards[i].point}`
-				document.getElementById(
-					'chansesRund'
-				).textContent = `1/${chansIn(chances.cards[i].chans)}`
+				document.getElementById('chansesRund').textContent = `1/${chansIn(
+					chances.cards[i].chans
+				)}`
 				return setListItem([...listItem, chances.cards[i]])
 			}
 		}
 	}
 	return (
 		<div className={sty.glawBox}>
-			<div>
-				<button onClick={() => getRandomWithChance(dataCard)}>rand</button>
+			<Header></Header>
+			<div className={sty.boxCartRand}>
+				
+				{/* <ul>
+					{listItem.map((imt) => {
+						return (
+							<li key={nanoid()}>
+								<p>chanse {imt.chans}%</p>
+								<p>txt{imt.txt}</p>
+								<img width="200px" src={imt.photo}></img>
+							</li>
+						)
+					})}
+				</ul> */}
+				<div className={sty.cart}>
+					<img
+						className={sty.imgRund}
+						width="200px"
+						id="imgRund"
+						src="aw"
+					></img>
+					<h2 id="TitleRund"></h2>
+					<p id="AnimeNameRund"></p>
+					<p id="PointRund"></p>
+					<p id="chansesRund"></p>
+				</div>
+				<div >
+					<button onClick={() => getRandomWithChance(dataCard)}>rand</button>
+				</div>
 			</div>
-			<ul>
-				{listItem.map((imt) => {
-					return (
-						<li key={nanoid()}>
-							<p>chanse {imt.chans}%</p>
-							<p>txt{imt.txt}</p>
-							<img width="200px" src={imt.photo}></img>
-						</li>
-					)
-				})}
-			</ul>
-			<div>
-				<img className={sty.imgRund} width="200px" id="imgRund" src="aw"></img>
-				<h2 id="TitleRund"></h2>
-				<p id="AnimeNameRund"></p>
-				<p id="PointRund"></p>
-				<p id="chansesRund"></p>
-			</div>
+			
 		</div>
 	)
 }

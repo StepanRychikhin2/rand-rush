@@ -4,7 +4,7 @@
           {
             "id": 1,
             "namePrs": "Satoru Gojo",
-            "photo": "https://github.com/StepanRychikhin2/rand-rush/blob/c74e13cc5a5d6c9cbfeafd94ba93bb37e363ab3d/src/img/jogo.jpg?raw=true",
+            "photo": "https://github.com/StepanRychikhin2/rand-rush/blob/main/src/img/gojo.jpg?raw=true",
             "chans": 50,
             "txt": "5",
             "point": 100,
@@ -32,7 +32,7 @@
           {
             "id": 3,
             "namePrs": "itadori",
-            "photo": "https://github.com/StepanRychikhin2/rand-rush/blob/main/src/img/sukuna.jpg?raw=true",
+            "photo": "https://github.com/StepanRychikhin2/rand-rush/blob/main/src/img/itadori.jpg?raw=true",
             "chans": 35,
             "txt": "awdawd",
             "point": 45656,
