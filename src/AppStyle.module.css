@@ -28,3 +28,14 @@
 	transform: translateY(300px) rotate(45deg);
 	opacity: 0;
 }
+.invBoxModalBackdrop {
+	display: flex;
+	justify-content: center;
+	width: 100vw; /* 100% від ширини вікна перегляду */
+	height: 100vh;
+	position: absolute;
+	margin: 0;
+	top: 0;
+	backdrop-filter: blur(10px);
+	/* background-color: red; */
+}
